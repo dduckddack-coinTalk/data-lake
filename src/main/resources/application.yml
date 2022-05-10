@@ -1,0 +1,6 @@
+spring:
+  influxdb:
+    url: http://localhost:8086
+    database: coin
+    username: admin
+    retention-policy: autogen
