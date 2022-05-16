@@ -10,7 +10,7 @@ import java.util.List;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class TestChangeCandleData {
+public class ChangeCandleInnerData {
 
     private List<Object> t;
 
@@ -18,9 +18,9 @@ public class TestChangeCandleData {
 
     private List<Object> h;
 
-    private List<Object> c;
-
     private List<Object> l;
+
+    private List<Object> c;
 
     private List<Object> v;
 }

@@ -8,9 +8,11 @@ import lombok.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class ChangeCandleData {
+public class RequestCoin {
 
-    private String status;
-    private ChangeCandleInnerData data;
+    private String coin;
 
+    private String time;
+
+    private String timeType;
 }

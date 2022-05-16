@@ -11,7 +11,7 @@ public class DataLakeScheduler {
 
     private final DataLakeService dataLakeService;
 
-    // 빗썸 1분봉 데이터 저장
+    // 빗썸 1분봉 데이터 저장 30초 마다 실행
     @Scheduled(fixedDelay = 30000, initialDelay = 1000)
     public void dataCrawling() {
         dataLakeService.dataCrawling();

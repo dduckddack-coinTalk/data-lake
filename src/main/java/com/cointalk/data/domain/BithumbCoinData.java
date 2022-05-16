@@ -2,9 +2,6 @@ package com.cointalk.data.domain;
 
 import lombok.*;
 
-import java.sql.Array;
-import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -13,7 +10,7 @@ import java.util.List;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class BitData {
+public class BithumbCoinData {
 
     private String status;
 

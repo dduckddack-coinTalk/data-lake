@@ -4,16 +4,13 @@ import lombok.Getter;
 import lombok.Setter;
 import org.influxdb.annotation.Column;
 import org.influxdb.annotation.Measurement;
-import org.influxdb.annotation.TimeColumn;
 
-import java.sql.Timestamp;
 import java.time.Instant;
-import java.util.concurrent.TimeUnit;
 
 @Getter
 @Setter
 @Measurement(name = "cointalk")
-public class OneMinuteCandleData {
+public class CandleData {
 
     @Column(name = "time")
     private Instant time;
