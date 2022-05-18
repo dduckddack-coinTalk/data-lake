@@ -13,6 +13,9 @@ import org.springframework.data.influxdb.converter.PointConverter;
 
 @Configuration
 @EnableConfigurationProperties(InfluxDBProperties.class)
+/*
+  influx DB 설정
+ */
 public class InfluxDBConfiguration {
 
     @Bean

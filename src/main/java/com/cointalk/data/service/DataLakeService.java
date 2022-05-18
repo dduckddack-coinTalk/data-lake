@@ -1,15 +1,14 @@
 package com.cointalk.data.service;
 
-import com.cointalk.data.domain.CandleData;
 import com.cointalk.data.domain.ChangeCandleData;
-import com.cointalk.data.domain.RequestCoin;
+import com.cointalk.data.domain.RequestCoinData;
 import reactor.core.publisher.Mono;
 
 public interface DataLakeService {
 
-    // 빗썸 1분봉 데이터 저장 (스케쥴러)
-    void dataCrawling();
+    // 빗썸 분봉 데이터 저장 (스케쥴러)
+    void dataCrawling(String chartIntervals);
 
-    // 특정 코인의 특정시간 데이터 조회
-    Mono<ChangeCandleData> getCandleData(RequestCoin requestCoin);
+    // 사용자가 요청한 코인의 특정시간 데이터 조회
+    Mono<ChangeCandleData> getCandleData(RequestCoinData requestCoinData);
 }

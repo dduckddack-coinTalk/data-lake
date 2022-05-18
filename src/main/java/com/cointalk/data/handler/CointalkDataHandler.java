@@ -1,8 +1,7 @@
 package com.cointalk.data.handler;
 
-import com.cointalk.data.domain.CandleData;
 import com.cointalk.data.domain.ChangeCandleData;
-import com.cointalk.data.domain.RequestCoin;
+import com.cointalk.data.domain.RequestCoinData;
 import com.cointalk.data.service.DataLakeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
@@ -17,9 +16,9 @@ public class CointalkDataHandler {
 
     private final DataLakeService dataLakeService;
 
-    // 코인데이터 조회
-    public Mono<ServerResponse> getOneMinuteData(ServerRequest request) {
-        Mono<ChangeCandleData> changeCandleDataMono = request.bodyToMono(RequestCoin.class)
+    // 사용자가 요청한 코인의 특정시간 데이터 조회
+    public Mono<ServerResponse> getChartData(ServerRequest request) {
+        Mono<ChangeCandleData> changeCandleDataMono = request.bodyToMono(RequestCoinData.class)
                 .flatMap(dataLakeService::getCandleData)
                 .log()
                 ;

@@ -8,11 +8,11 @@ import lombok.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class RequestCoin {
+public class RequestCoinData {
 
     private String coin;
 
     private String time;
 
-    private String timeType;
+    private String chartIntervals;
 }

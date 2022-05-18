@@ -15,8 +15,8 @@ public class CandleData {
     @Column(name = "time")
     private Instant time;
 
-    @Column(name = "id")
-    private String id;
+    @Column(name = "coin")
+    private String coin;
 
     @Column(name = "close")
     private String close;
@@ -37,7 +37,7 @@ public class CandleData {
     public String toString() {
         return "OneMinuteCandleData{" +
                 "time=" + time +
-                ", id='" + id + '\'' +
+                ", coin='" + coin + '\'' +
                 ", close='" + close + '\'' +
                 ", high='" + high + '\'' +
                 ", low='" + low + '\'' +
