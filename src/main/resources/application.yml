@@ -1,6 +1,0 @@
-spring:
-  influxdb:
-    url: 
-    database: 
-    username: 
-    retention-policy: autogen
