@@ -32,7 +32,7 @@ public class DataLakeScheduler {
     // 빗썸 60분봉 데이터 저장 30분 마다 실행
     @Scheduled(cron ="0 */30 * * * *")
     public void dataCrawling60m() {
-        dataLakeService.dataCrawling("60m");
+        dataLakeService.dataCrawling("1h");
     }
 
 }

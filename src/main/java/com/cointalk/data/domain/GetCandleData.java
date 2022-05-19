@@ -2,18 +2,17 @@ package com.cointalk.data.domain;
 
 import lombok.*;
 
-import java.util.List;
-
 @Getter
 @Setter
 @Builder
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class BithumbCoinData {
+public class GetCandleData {
 
-    private String status;
+    private String coin;
 
-    private List<List<Object>> data;
+    private String time;
 
+    private String chartIntervals;
 }
